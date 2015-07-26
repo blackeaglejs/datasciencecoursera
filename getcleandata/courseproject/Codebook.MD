@@ -9,7 +9,9 @@ Variables ending in X,Y, and Z are three-dimensional signals from the accelerome
 The magnitude (or strength) of the various signals has also been provided in variables with the string "Mag."
 
 Jerk signals are a subset of both frequency and time signals and were derived from linear acceleration of the body and angular momentum.  
- 
+
+##Variables
+
 ### Subject
 The participant in the study.                  
 ### Activity
@@ -34,16 +36,16 @@ Body acceleration jerk signal's mean as measured by the accelerometer in X, Y, a
 Body acceleration jerk signal's standard deviation as measured by the accelerometer in X, Y, and Z dimensions.
       
 ### tBodyGyromeanX,Y, Z           
-Body acceleration time signal's mean as measured by the gyroscope in X, Y, and Z dimensions.
+Angular acceleration time signal's mean as measured by the gyroscope in X, Y, and Z dimensions.
            
 ### tBodyGyrostdX,Y, Z           
-Body acceleration time signal's standard deviation as measured by the gyroscope in X, Y, and Z dimensions.
+Angular acceleration time signal's standard deviation as measured by the gyroscope in X, Y, and Z dimensions.
            
 ### tBodyGyroJerkmeanX,Y, Z       
-Body acceleration jerk signal's mean as measured by the gyroscope in X, Y, and Z dimensions.
+Angular acceleration jerk signal's mean as measured by the gyroscope in X, Y, and Z dimensions.
        
 ### tBodyGyroJerkstdX,Y, Z       
-Body acceleration jerk signal's standard deviation as measured by the gyroscope in X, Y, and Z dimensions.
+Angular acceleration jerk signal's standard deviation as measured by the gyroscope in X, Y, and Z dimensions.
        
 ### tBodyAccMagmean
 Body acceleration time signal magnitude's mean as measured by the accelerometer.
@@ -64,16 +66,16 @@ Body acceleration jerk signal magnitude's mean as measured by the accelerometer.
 Body acceleration jerk signal magnitude's standard deviation as measured by the accelerometer.
  
 ### tBodyGyroMagmean
-Body acceleration time signal magnitude's mean as measured by the gyroscope. 
+Angular acceleration time signal magnitude's mean as measured by the gyroscope. 
          
 ### tBodyGyroMagstd         
-Body acceleration time signal magnitude's standard deviation as measured by the gyroscope.
+Angular acceleration time signal magnitude's standard deviation as measured by the gyroscope.
 
 ### tBodyGyroJerkMagmean     
-Body acceleration jerk signal magnitude's mean as measured by the gyroscope. 
+Angular acceleration jerk signal magnitude's mean as measured by the gyroscope. 
 
 ### tBodyGyroJerkMagstd
-Body acceleration jerk signal magnitude's standard deviation as measured by the gyroscope. 
+Angular acceleration jerk signal magnitude's standard deviation as measured by the gyroscope. 
      
 ### fBodyAccmeanX,Y, Z
 Body acceleration frequency signal's mean as measured by the accelerometer in X, Y, and Z dimensions.        
@@ -88,10 +90,10 @@ Body jerk acceleration frequency signal's mean as measured by the accelerometer 
 Body jerk acceleration frequency signal's standard deviation as measured by the accelerometer in X, Y, and Z dimensions.        
        
 ### fBodyGyromeanX,Y, Z
-Body acceleration frequency signal's mean as measured by the gyroscope in X, Y, and Z dimensions.           
+Angular acceleration frequency signal's mean as measured by the gyroscope in X, Y, and Z dimensions.           
            
 ### fBodyGyrostdX,Y, Z
-Body acceleration frequency signal's standard deviation as measured by the gyroscope in X, Y, and Z dimensions.           
+Angular acceleration frequency signal's standard deviation as measured by the gyroscope in X, Y, and Z dimensions.           
            
 ### fBodyAccMagmean
 Body acceleration frequency signal magnitude's mean as measured by the accelerometer.
@@ -106,13 +108,13 @@ Body jerk acceleration frequency signal magnitude's mean as measured by the acce
 Body jerk acceleration frequency signal magnitude's standard deviation as measured by the accelerometer.
 
 ### fBodyBodyGyroMagmean
-Body acceleration frequency signal magnitude's mean as measured by the gyroscope. 
+Angular acceleration frequency signal magnitude's mean as measured by the gyroscope. 
      
 ### fBodyBodyGyroMagstd
-Body acceleration frequency signal magnitude's standard deviation as measured by the gyroscope. 
+Angular acceleration frequency signal magnitude's standard deviation as measured by the gyroscope. 
      
 ### fBodyBodyGyroJerkMagmean
-Body jerk acceleration frequency signal magnitude's mean as measured by the gyroscope.
+Angular jerk acceleration frequency signal magnitude's mean as measured by the gyroscope.
   
 ### fBodyBodyGyroJerkMagstd
-Body jerk accelereration frequency signal magnitude's men as measured by the gyroscope. 
+Angular jerk accelereration frequency signal magnitude's men as measured by the gyroscope. 
