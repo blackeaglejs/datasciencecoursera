@@ -56,3 +56,9 @@ msd_var_names <- read.table("NarrowVarNames.txt", sep = "")
 colnames(all_data_msd) <- msd_var_names$V1
 
 ## Create tidy data set which calculates mean of each tidy variable based on (1) subject and (2) activity.
+
+## Group by participant and activity.
+
+## Do a mean of each column. 
+
+## Put those means into the new "tidy" dataset. 
