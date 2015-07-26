@@ -44,3 +44,10 @@ all_data$activity <- ifelse(all_data$activity ==3, "walking downstairs", all_dat
 all_data$activity <- ifelse(all_data$activity ==4, "sitting", all_data$activity)
 all_data$activity <- ifelse(all_data$activity ==5, "standing", all_data$activity)
 all_data$activity <- ifelse(all_data$activity ==6, "laying", all_data$activity)
+
+## Eliminate variables that are not means or standard deviation.
+all_data_msd <- all_data[c(1:6,41:46,81:86,121:126,161:166,201:202,214:215,227:228,240:241,253:254,266:271,345:350,424:429,503:504,516:517,529:530,542:543,562:563)]
+
+## Name variables descriptively. 
+
+## Create tidy data set which calculates mean of each tidy variable based on (1) subject and (2) activity.
