@@ -10,6 +10,8 @@ The magnitude (or strength) of the various signals has also been provided in var
 
 Jerk signals are a subset of both frequency and time signals and were derived from linear acceleration of the body and angular momentum.  
 
+Finally, a quirk in the way that the variable names were provided by the original source has caused the last few variables to have the word "Body" appear twice in the variable name. This is known and does not affect the data. 
+
 ##Variables
 
 ### Subject
