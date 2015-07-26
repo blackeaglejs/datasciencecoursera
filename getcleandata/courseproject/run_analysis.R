@@ -51,3 +51,9 @@ all_data_msd <- all_data[c(1:6,41:46,81:86,121:126,161:166,201:202,214:215,227:2
 ## Create tidy data set which calculates mean of each tidy variable based on (1) subject and (2) activity.
 all_data_msd_dt <- data.table(all_data_msd)
 tidy_data <- all_data_msd_dt[,lapply(.SD,mean),by=c("subject","activity"),.SDcols=1:66]
+
+## Sort that data so that it appears sorted by subject.
+tidy_data_2 <- arrange(tidy_data, subject)
+
+## Output data as a machine-readable text file. 
+write.table(tidy_data_2, file="tidy_data.txt", sep = " ", row.names = FALSE)
