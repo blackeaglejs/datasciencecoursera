@@ -1,0 +1,104 @@
+library(foreign)
+fmr<-fmr.dta(/Users/Zoheb2/Downloads/fmr.dta)
+library(foreign)
+fmr<-fmr.dta(Users/Zoheb2/Downloads/FMR.dta)
+library(foreign)
+fmr<-read.dta(Users/Zoheb2/Downloads/FMR.dta)
+fmr<-read.dta(Zoheb2/Downloads/FMR.dta)
+fmr<-read.dta(FMR.dta)
+fmr<-read.dta(/FMR.dta)
+fmr<-read.dta(\FMR.dta)
+fmr <- read.dta("/Users/Zoheb2/Downloads/FMR.dta")
+library(foreign)
+fmr <- read.dta("/Users/Zoheb2/Downloads")
+a <- available.packages()
+install.packages(c("slidify", "ggplot2", "devtools"))
+Install.packages("KernSmooth")
+install.packages("KernSmooth")
+library(KernSmooth)
+data()
+data(presidents)
+q()
+x <- 1
+print(x)
+x
+msg <- "hello"
+msg
+x <- [1,2,3,4,5]
+x <- 2
+x
+x <- 1,2,3,4,5
+y <- 3
+z <- x + y
+z
+x <- c(1,2,3,4,5,6)
+x
+as.character(x)
+as.logical(x)
+as.numeric(x)
+x <- list(1,"two",3,"four",5)
+x
+x <- c(1,2,3,4,5)
+x
+y <- r(5,4,3,2,1)
+y <- c(5,4,3,2,1)
+y
+cbind(x,y)
+rbind(x,y)
+x <- c(1,2,3,4)
+cbind(x,y)
+rbind(x,y)
+x <- factor (c("male","female","male","male"))
+x
+table(x)
+levels(x)
+x <- factor (c("male","female","male","male")), levels("male",female)
+x <- factor (c("male","female","male","male")), levels("male",female")
+x <- factor (c("male","female","male","male"), levels("male",female"))
+x
+levels(x)
+exit
+)
+for(i in 1:10) {}
+for(i in 1:10) { print i}
+for(i in 1:10) {print i}
+for(i in 1:10) {print(i)}
+args(paste)
+args(cat)
+lm
+search()
+cube(3)
+bday <- as.Date("1988-04-26")
+bday
+unclass(bday)
+weekdays(bday)
+months(bday)
+quarters(bday)
+bday <- as.POSIXLT("1988-04-26 18:16:00 EST")
+bday <- as.POSIXlt("1988-04-26 18:16:00 EST")
+bday
+unclass(bday)
+bday$mday
+x <- 1:10
+x
+if (x>5) {x <- 0}
+getwd
+getwd()
+setwd(~/dev/datasciencecoursera)
+setwd(/dev/datasciencecoursera)
+setwd(dev/datasciencecoursera)
+setwd("~/dev/datasciencecoursera")
+getwd
+getwd()
+x <- matrix(1:6, 2, 3)
+x
+x[1, 2]
+x[3,2]
+x[2,3]
+source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript1.R")
+getwd()
+source("pollutantmean.R")
+pollutantmean("specdata", "sulfate", 1:10)
+all.files
+list.files
+list.files()

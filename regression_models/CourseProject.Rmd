@@ -1,0 +1,61 @@
+---
+title: "Effects of various car features on fuel mileage using the mtcars dataset."
+author: "Zoheb Nensey"
+date: "December 27, 2015"
+output: word_document
+---
+## Executive Summary
+Fuel mileage in cars became a subject of interest in recent years as gas prices in the United States began to rapidly increase in the last decade (though they have since declined preciptiously). Increasing fuel mileage, as a result, has become a primary focus of automakers as a major selling point. 
+
+In this analysis, our main question is whether the type of transmission in a car (automatic or manual) has an effect on fuel mileage, as well as trying to assess how much of an impact it has. My analysis here indicates that on it's own, the variable appears to have a significant effect on mileage, but has little impact when other variables are held constant to account for confounding. 
+
+## Analyses
+### Hypotheses 
+The null hypothesis is that transmission type does not have a coefficient different than zero when trying to explain fuel mileage. The alternative hypothesis is that the coefficient is different than zero. 
+
+### Exploratory Analysis 
+To start, correlations were checked to see what variables might have the most impact on mileage. The correlations displayed below are the correlations between mileage and other variables. 
+```{r echo=FALSE}
+cor(mtcars)[1,]
+```
+Looking here farther down, it appears that the variables with the larges amount of impact are cylinders, the displacement, horsepowers, the rear axle ratio, weight, and the transmission. A plot of the correlation between these variables can be found in the appendix. 
+
+### Regression Analyses
+To start, we present a simple linear regression analysis with the transmission as a predictor. 
+```{r}
+simple_linear <- lm(mpg ~ am, data=mtcars)
+summary(simple_linear)$coefficients
+summary(simple_linear)$r.squared
+```
+
+The simple linear regression indicates that transmission is a significant variable, and the R-squared value indicates that 35.98% of variance is explained by this version of the model, but we still need to account for other variables. So we'll move to a multivariate model using the variables above. 
+```{r}
+multivariate_linear_1 <- lm(mpg ~ cyl + disp + hp + drat + wt + am, data=mtcars)
+anova(multivariate_linear_1)
+```
+
+Based on the ANOVA for this model, there appear to be several highly insignificant variables, so these will be removed (with the exception of transmission.)
+```{r}
+multivariate_linear_2 <- lm(mpg ~ cyl + disp + wt + am, data=mtcars)
+summary(multivariate_linear_2)$coefficients
+anova(multivariate_linear_2)
+rsqr <- summary(multivariate_linear_2)$r.squared
+```
+
+After creating a regression with just these variables, we can recheck the coefficients and use an ANOVA to test significance. Looking at this model, it appears that the transmission variable is more or less insignificant compared to the rest of the predictor variables. The R-squared for this model is `r rsqr`, meaning that this version of the model explains 83.26% of the variance. Despite the r-squared, we cannot reject the null hypothesis since this null hypothesis is testing if the coefficient of transmission is non-zero. 
+
+#### Residuals 
+The other thing we need to check is residuals. This can be performed by plotting. 
+```{r echo=FALSE}
+par(mfrow = c(2,2))
+plot(multivariate_linear_2)
+```
+
+The residuals are apprxoimately normal, based on the Q-Q plot. though based on the residuals vs fitted plot it appears that some vehicles may be considered outliers and could distort the data. 
+
+## Appendix
+
+```{r echo=FALSE}
+analysis_variables <- mtcars[,c(1,2,3,4,5,6,9)]
+pairs(analysis_variables, panel = panel.smooth, main="Correlations between Variables of Concern")
+```

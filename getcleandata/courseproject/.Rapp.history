@@ -1,0 +1,286 @@
+x <- 1,2,3,4,5
+y <- 3
+z <- x + y
+z
+x <- c(1,2,3,4,5,6)
+x
+as.character(x)
+as.logical(x)
+as.numeric(x)
+x <- list(1,"two",3,"four",5)
+x
+x <- c(1,2,3,4,5)
+x
+y <- r(5,4,3,2,1)
+y <- c(5,4,3,2,1)
+y
+cbind(x,y)
+rbind(x,y)
+x <- c(1,2,3,4)
+cbind(x,y)
+rbind(x,y)
+x <- factor (c("male","female","male","male"))
+x
+table(x)
+levels(x)
+x <- factor (c("male","female","male","male")), levels("male",female)
+x <- factor (c("male","female","male","male")), levels("male",female")
+x <- factor (c("male","female","male","male"), levels("male",female"))
+x
+levels(x)
+exit
+)
+x <- list (1:4, rnorm(10), rnorm(20,1), rnorm(100,5))
+lapply(x,mean)
+x < 1:4
+x <- 1:4
+lapply(x,runif)
+lapply(x,runif, min =0, max =10)
+sapply(x,runif, min =0, max =10)
+x <- list (1:4, rnorm(10), rnorm(20,1), rnorm(100,5))
+sapply(x,mean)
+x <- matrix(rnorm(200),20,10)
+x
+apply(x,2,mean)
+x <- matrix(rnorm(200), 20, 10)
+apply(x, 2, mean)
+apply(x, 1, sum)
+apply(x,1,quantile, probs= c(0.25, 0.75))
+a <- array(rnorm(2*2*10), c(2,2,10))
+a
+apply(a,c(1,2), mean)
+rowmeans(a, dims=2)
+rowMeans(a, dims=2)
+list(rep(1,4),rep(2,3),rep(3,2),rep(4,1))
+mapply(rep,1:4,4:1)
+noise <- function(n,mean,sd) {}
+str(tapply)
+x <- c (rnorm(10, runif(10), rnorm(10,1)))
+x
+x <- c (rnorm(10), runif(10), rnorm(10,1)))
+x <- c (rnorm(10), runif(10), rnorm(10,1))
+x
+tapply(x,f,mean, simplify = FALSE)
+f < gl(3,10)
+f <- gl(3,10)
+tapply(x,f,mean, simplify = FALSE)
+f
+x <- c(rnorm(10), runif(10), rnorm(10,1))
+f
+split(x,f)
+lapply(split(x,f),mean)
+library(datasets)
+head(airquality)
+split(airquality,airquality$month)
+split(airquality,airquality$Month)
+lapply(s,function(x) colmeans(x[, c("Ozone", "Solar.R", "Wind")]))
+s <- split(airquality,airquality$Month)
+lapply(s,function(x) colmeans(x[, c("Ozone", "Solar.R", "Wind")]))
+lapply(s,function(x) colMeans(x[, c("Ozone", "Solar.R", "Wind")]))
+lapply(s,function(x) colMeans(x[, c("Ozone", "Solar.R", "Wind")], na.rm = TRUE))
+log(-1)
+log(1)
+log(9000)
+printmessage <- function(x) {if(x>0) print("x is greater than zero")} else print {"x is less than or equal to zero"}
+printmessage <- function(x) {if(x>0) print("x is greater than zero")} else {print("x is less than zero")}
+mean(x)
+q()
+library(datasets)
+data(iris)
+?iris
+iris
+tapply(iris$sepal.length,iris$species,mean)
+iris$sepal.length
+iris$species
+iris$Species
+iris$Sepal.length
+iris$Sepal.Length
+tapply(iris$Sepal.Length,iris$Species,mean)
+colMeans(iris)
+iris
+apply(iris[, 1:4],2, mean)
+apply(iris,2,mean)
+apply(iris,1,mean)
+library(datasets)
+data(mtcars)
+?mtcars
+sapply(mtcars,cyl,mean)
+apply(mtcars,2,mean)
+split(mtcars,mtcars$cyl)
+sapply(split(mtcars$mpg,mtcars$cyl),mean)
+sapply(split(mtcars$hp,mtcars$cyl),mean)
+209.21429 - 82.63636
+debug(ls)
+ls
+str(str)
+str(lm)
+str(ls)
+str(print)
+x <rnorm(100,2,4)
+x <- rnorm(100,2,4)
+x
+summary(x)
+str(x)
+library(datasets)
+str(airquality)
+m <- matrix(rnorm(100),10,10)
+str(m)
+m[,1]
+set.seed(20)
+x <- rnorm(100)
+e <- rnorm(100,0,2)
+y <- 0.5 + 2 * x + e
+summary(y)
+plot(x,y)
+str(y)
+set.seed(1)
+x <- rnorm(100)
+log.mu <- 0.5 + 0.3 * x
+y <- rpois(100, exp(log.mu))
+summary(y)
+plot(x,y)
+sample(letters, 5)
+system.time()
+x <- hilbert(1000)
+hilbert <- function(n) {i<- 1:n, 1/ outer(i-1,i, "+")}
+str(Rprof)
+Rprof
+y
+x
+summaryRprof()
+sample.interval
+set.seed(1)
+rpois(5,2)
+install.packages('xlsx')
+library(xlsx)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", startRow = 18, endRow = 23, header = TRUE)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, header = TRUE)
+dat
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = 7-15 header = TRUE)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = 7-15, header = TRUE)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = 7, header = TRUE)
+dat
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = 7,8,9,10,11,12,13,14,15, header = TRUE)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = c(7,8,9,10,11,12,13,14,15), header = TRUE)
+dat
+sum(dat$Zip*dat$Ext,na.rm=T)
+library(XML)
+package.install(XML)
+install.packages('XML')
+library(XML)
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml"
+fileUrl
+doc <- xmlTreeParse(fileUrl, useInternal=TRUE)
+fileUrl <- http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml
+fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml"
+doc <- xmlTreeParse(fileUrl, useInternal=TRUE)
+node[@attr-name=='zipcode']
+//zipcode
+rootNode <-xmlRoot(doc)
+xmlName(rootNode)
+xpathSapply(rootNode,"//zipcode",xmlValue)
+rootNode
+rootNode[[1]]
+rootNode[[1]][[1]]
+rootNode[[1]][[1]][[2]]
+xmlSapply(rootnode,xmlValue)
+restaurants <- rootNode
+restaurants
+nrows(restaurants)
+xmlName(rootNode)
+restaurants <- xmlSApply(rootNode, function(x), xmlSApply(x, xmlValue))
+restaurants <- xmlSApply(rootNode, function(x) xmlSApply(x, xmlValue))
+restaurants
+restaurants_df <- data.frame(t(restaurants), row.names=NULL)
+head(restaurants_df)
+restaurants_df[1:5, 1:4]
+restaurants <- xmlSApply(rootNode)
+restaurants <- xmlSApply(rootNode, function(x))
+restaurants <- xmlSApply(rootNode, nrows)
+restaurants <- xmlSApply(rootNode, nrows(rootNode))
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+download.file(fileUrl, destfile="~/dev/datasciencecoursera/getcleandata/2006microdata.csv", method="curl")
+install.packages('data.table')
+library(data.table)
+DF <- fread()
+DF <- fread("2006microdata.csv")
+fread(2006microdata.csv)
+install.Packages("RMySQL")
+install.packages("RMySQL")
+source(http://bioconductor.org/bioLite.R)
+source("http://bioconductor.org/bioLite.R")
+install.packages(sqldf)
+install.packages("sqldf")
+## Import the test data#
+## Note that all data should be in the same directory instead of the folder structure it came in.#
+x_test <- "X_test.txt"#
+x_test_data <- read.table(x_test, sep = "")#
+#
+y_test <- "y_test.csv"#
+y_test_data <- read.table(y_test, sep = "")#
+#
+test_data <- cbind(x_test_data,y_test_data)#
+#
+## Import the training data#
+x_train <- "X_train.txt"#
+x_train_data <- read.table(x_train, sep = "")#
+#
+y_train <- "y_train.txt"#
+y_train_data <- read.table(y_train, sep = "")#
+#
+train_data <- cbind(x_train_data,y_train_data)#
+#
+## Merge The test and training data together. #
+all_data <- rbind(test_data,train_data)#
+#
+## Pull in the variable names from the data.#
+colnamesfile <- read.table("features.txt")#
+colnames <- colnamesfile$V2#
+colnames(all_data) <- colnames
+x_test <- "X_test.txt"
+x_test_data <- read.table(x_test, sep = "")
+getwd()
+setwd("~/dev/datasciencecoursera/getcleandata/courseproject/")
+list.files()
+x_test <- "X_test.txt"#
+x_test_data <- read.table(x_test, sep = "")#
+#
+y_test <- "y_test.csv"#
+y_test_data <- read.table(y_test, sep = "")
+x_test <- "X_test.txt"
+nrows(x_test_data)
+nrow(x_test_data)
+y_test <- "y_test.txt"#
+y_test_data <- read.table(y_test, sep = "")
+nrow(y_test_data)
+test_data <- cbind(x_test_data,y_test_data)
+nrows(test_data)
+nrow(test_data)
+x_train <- "X_train.txt"#
+x_train_data <- read.table(x_train, sep = "")#
+#
+y_train <- "y_train.txt"#
+y_train_data <- read.table(y_train, sep = "")#
+#
+train_data <- cbind(x_train_data,y_train_data)
+nrow(train_data)
+head(test_data)
+head(train_data)
+all_data <- rbind(test_data,train_data)
+nrows(all_data)
+nrow(all_data0)
+nrow(all_data)
+colnamesfile <- read.table("features.txt")
+colnames <- colnamesfile$V2
+colnames
+colnames(all_data) <- colnames
+head(all_data)
+colnames(all_data)
+colnames(all_data[562])
+colnames(all_data)[colnames(all_names[562])] <- "activity code"
+names(all_data)[562]
+names(all_data)[561]
+names(all_data)[562] <- "activity code"
+colnames(all_data)
+head(all_data)
+colnames(all_data)

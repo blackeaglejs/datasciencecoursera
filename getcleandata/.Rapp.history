@@ -1,0 +1,251 @@
+summary(x)
+str(x)
+library(datasets)
+str(airquality)
+m <- matrix(rnorm(100),10,10)
+str(m)
+m[,1]
+set.seed(20)
+x <- rnorm(100)
+e <- rnorm(100,0,2)
+y <- 0.5 + 2 * x + e
+summary(y)
+plot(x,y)
+str(y)
+set.seed(1)
+x <- rnorm(100)
+log.mu <- 0.5 + 0.3 * x
+y <- rpois(100, exp(log.mu))
+summary(y)
+plot(x,y)
+sample(letters, 5)
+system.time()
+x <- hilbert(1000)
+hilbert <- function(n) {i<- 1:n, 1/ outer(i-1,i, "+")}
+str(Rprof)
+Rprof
+y
+x
+summaryRprof()
+sample.interval
+set.seed(1)
+rpois(5,2)
+install.packages('xlsx')
+library(xlsx)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", startRow = 18, endRow = 23, header = TRUE)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, header = TRUE)
+dat
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = 7-15 header = TRUE)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = 7-15, header = TRUE)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = 7, header = TRUE)
+dat
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = 7,8,9,10,11,12,13,14,15, header = TRUE)
+dat <- read.xlsx("~/dev/datasciencecoursera/getcleandata/getdata-data-DATA.gov_NGAP.xlsx", sheetIndex=1, startRow = 18, endRow = 23, colIndex = c(7,8,9,10,11,12,13,14,15), header = TRUE)
+dat
+sum(dat$Zip*dat$Ext,na.rm=T)
+library(XML)
+package.install(XML)
+install.packages('XML')
+library(XML)
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml"
+fileUrl
+doc <- xmlTreeParse(fileUrl, useInternal=TRUE)
+fileUrl <- http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml
+fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml"
+doc <- xmlTreeParse(fileUrl, useInternal=TRUE)
+node[@attr-name=='zipcode']
+//zipcode
+rootNode <-xmlRoot(doc)
+xmlName(rootNode)
+xpathSapply(rootNode,"//zipcode",xmlValue)
+rootNode
+rootNode[[1]]
+rootNode[[1]][[1]]
+rootNode[[1]][[1]][[2]]
+xmlSapply(rootnode,xmlValue)
+restaurants <- rootNode
+restaurants
+nrows(restaurants)
+xmlName(rootNode)
+restaurants <- xmlSApply(rootNode, function(x), xmlSApply(x, xmlValue))
+restaurants <- xmlSApply(rootNode, function(x) xmlSApply(x, xmlValue))
+restaurants
+restaurants_df <- data.frame(t(restaurants), row.names=NULL)
+head(restaurants_df)
+restaurants_df[1:5, 1:4]
+restaurants <- xmlSApply(rootNode)
+restaurants <- xmlSApply(rootNode, function(x))
+restaurants <- xmlSApply(rootNode, nrows)
+restaurants <- xmlSApply(rootNode, nrows(rootNode))
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+download.file(fileUrl, destfile="~/dev/datasciencecoursera/getcleandata/2006microdata.csv", method="curl")
+install.packages('data.table')
+library(data.table)
+DF <- fread()
+DF <- fread("2006microdata.csv")
+fread(2006microdata.csv)
+install.Packages("RMySQL")
+install.packages("RMySQL")
+source(http://bioconductor.org/bioLite.R)
+source("http://bioconductor.org/bioLite.R")
+install.packages(sqldf)
+install.packages("sqldf")
+getwd()
+setwd("~/dev/datasciencecoursera/getcleandata")
+idahodata <- read.csv("acsdataidaho2006.csv",header=TRUE)
+head(idahodata)
+names(idahodata)
+splitidaho <- strsplit(names(idahodata),"wgtp")
+splitidaho
+splitidaho[[123]]
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FGDP.csv"
+download.file(fileUrl,"gdpdata.csv",method="curl")
+gdpdata <- read.csv("gdpdata.csv",header=TRUE)
+names(gdpdata)
+gdpdata
+gdpdata <- read.csv("gdpdata.csv",header=TRUE)
+names(gdpdata)
+head(gdpdata)
+head(gdpdata$US.dollars)
+gsub(",","",gdpdata$US.dollars)
+head(gdpdata$US.dollars)
+gdpdata$Us.dollars
+gdpdata$US.dollars
+nocommas <- gsub(",","",gdpdata$US.dollars)
+head(nocommas)
+mean(nocommas,na.rm = TRUE)
+gsub(".",NA,nocommas)
+gsub("..",NA,nocommas)
+gsub(". .",NA,nocommas)
+gsub(" ","",nocommas)
+nocommas <- gsub(" ","",nocommas)
+nocommas
+gsub("..",NA,nocommas)
+is.numeric(nocommas)
+as.numeric(nocommas)
+mean(nocommas,na.rm = TRUE)
+mean(nocommas$V1,na.rm = TRUE)
+nocommas <_ as.numeric(nocommas)
+nocommas <- as.numeric(nocommas)
+nocommas
+mean(nocommas,na.rm=TRUE)
+nocommas[[1]]
+nocommas[[190]]
+nocommas[[1]][[190]]
+substring(nocommas,1,190)
+substring(nocommas,[[1]],[[190]])
+substr(nocommas,1,190)
+is.numeric(nocommas[[1]])
+grep("^United",countryNames)
+grep("^United",gdpdata$countryNames)
+head(gdpdata)
+grep("^United",gdpdata$Economy)
+list.files()
+edudata <- read.csv("edudata.csv")
+nrows(edudata)
+nrow(edudata)
+names(edudata)
+merge(gdpdata,edudata,by.x=gdpdata$shortcode,edudata$CountryCode)
+merge(gdpdata,edudata,by.x=gdpdata$shortcode,by.y=edudata$CountryCode)
+names(gdpdata)
+gdpdata <- read.csv("gdpdata.csv")
+names(gdpdata)
+merge(gdpdata,edudata,by.x=gdpdata$shortcode,by.y=edudata$CountryCode)
+head(gdpdat)
+head(gdpdata)
+head(edudata)
+names(edudata)
+merged2 <- read.csv("merged2.csv")
+merged2
+names(merged2)
+merged2$Special.notes
+merged2$Special.Notes
+grep([Ff][i][s][c][a][l],merged2$Special.Notes)
+grep("[Ff][i][s][c][a][l]",merged2$Special.Notes)
+merged2$Special.notes[[16]]
+merged2$Special.Notes[[16]]
+merged2$Special.Notes[[16]], merged2$Special.Notes[[28]]
+merged2$Special.Notes[[16]][[28]]
+merged2$Special.Notes[[28]]
+merged2$Special.Notes[[33]]
+merged2$Special.Notes[[34]]
+merged2$Special.Notes[[39]]
+merged2$Special.Notes[[52]]
+merged2$Special.Notes[[57]]
+merged2$Special.Notes[[63]]
+merged2$Special.Notes[[67]]
+merged2$Special.Notes[[73]]
+merged2$Special.Notes[[83]]
+merged2$Special.Notes[[84]]
+merged2$Special.Notes[[85]]
+merged2$Special.Notes[[103]]
+merged2$Special.Notes[[105]]
+merged2$Special.Notes[[129]]
+merged2$Special.Notes[[131]]
+merged2$Special.Notes[[134]]
+merged2$Special.Notes[[135]]
+merged2$Special.Notes[[146]]
+merged2$Special.Notes[[152]]
+merged2$Special.Notes[[155]]
+merged2$Special.Notes[[159]]
+merged2$Special.Notes[[162]]
+merged2$Special.Notes[[1168]]
+merged2$Special.Notes[[168]]
+merged2$Special.Notes[[169]]
+merged2$Special.Notes[[174]]
+merged2$Special.Notes[[178]]
+merged2$Special.Notes[[179]]
+merged2$Special.Notes[[180]]
+merged2$Special.Notes[[187]]
+merged2$Special.Notes[[189]]
+merged2$Special.Notes[[210]]
+install.packages("quantmod")
+library(quantmod)
+amzn = getSymbols("AMZN",auto.assign=FALSE)#
+sampleTimes = index(amzn)
+amzn = getSymbols("AMZN",auto.assign=FALSE)
+sampleTimes = index(amzn)
+amzn
+head(amzn)
+head(amzn$V1)
+head(amzn$date)
+names(amzn)
+head(sampleTimes)
+is.date(sampleTimes)
+format(sampleTimes,"$Y-%m-%d")
+converted <- as.Date(sampleTimes)
+head(converted)
+Sys.Date()
+converted[[1]]
+converted[1]
+converted[1]-converted[2]
+converted2012 <- grep("^2012",converted)
+head(converted2012)
+head(as.date(converted2012))
+head(as.Date(converted2012))
+install.packages("lubridate")
+library(lubridate)
+julian(converted)
+year(converted)
+converted2012 <- year(converted) == 2012
+head(converted2012)
+count(converted2012)
+converted2012 <- converted[year(converted) == 2012]
+head(converted2012)
+nrow(converted2012)
+table(converted2012)
+blah <- table(converted)
+head(blah)
+converted[year(converted) == 2012]
+as.data.frame(converted2012)
+converted2012 <- as.data.frame(converted2012)
+wday(converted2012)
+as.date(converted2012)
+as.Date(converted2012)
+converted2012 <- converted[year(converted) == 2012]
+converted2012
+wday(converted2012)
+wday(converted2012, label = TRUE)
+mon2012 <- converted2012[wday(converted2012) == 2]
+wday(mon2012)
+wday(mon2012,label = TRUE)
